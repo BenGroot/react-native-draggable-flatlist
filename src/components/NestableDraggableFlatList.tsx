@@ -62,6 +62,7 @@ function NestableDraggableFlatListInner<T>(
 
   const onDragBegin: DraggableFlatListProps<T>["onDragBegin"] = useStableCallback(
     (params) => {
+      console.log("whaaaha")
       setOuterScrollEnabled(false);
       props.onDragBegin?.(params);
     }
